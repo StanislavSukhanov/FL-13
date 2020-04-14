@@ -1,0 +1,146 @@
+// Write your styles here
+
+
+// mixins
+@mixin btn-main{
+  border-color: transparent;
+  border-radius: 2px;
+  background-color: $btnColor;
+  padding: .5em 2em;
+  color: $bodyBackground;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: map_get($fonts, 'pro');
+  margin-right: 10em;
+}
+
+@mixin link{
+  color: #fff;
+  font-family: map_get($fonts, 'h');
+
+  &:visited {
+    color: #fff;
+  }
+}
+// maps
+$fonts: ('pro': 'Source Sans Pro', 'h': 'Hind', 'fr': 'Fresca');
+
+p {
+  margin: 0;
+}
+
+body {
+  margin:0;
+  background-color: $bodyBackground;
+}
+
+.header {
+  background: url($headImage) no-repeat;
+  background-size: cover;
+  outline: 1px solid green;
+
+
+  p {
+    font-family: map-get($fonts, 'pro');
+    color: $headTextColor;
+
+  }
+
+  .header-wrap {
+    padding: 5em 0 8em;
+    margin-left: 5em;
+    width: 55%;
+
+  }
+
+  .landing-logo {
+    height: 3em;
+    display: flex;
+    align-items: center;
+
+    p {
+      text-transform: uppercase;
+      font-family: map-get($fonts, 'h');
+      width: 70px;
+      line-height: 1em;
+      font-size: 1.4em;
+      text-align: center;
+      white-space: pre-wrap;
+      color: $headTextColor;
+    }
+    img {
+      display: inline-block;
+    }
+    span {
+      font-size: 0.6em;
+      text-transform: lowercase;
+      font-family: map_get($fonts, 'fr');
+    }
+    span:before {
+     content: ' ';
+    }
+
+  }
+
+  .header_heading {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1em;
+  }
+
+  .header_text {
+    white-space: pre-line;
+    margin: 1.7em 0;
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 1.7em;
+  }
+
+  .header_button {
+    @include btn-main;
+  }
+
+  .login {
+    @include link;
+  }
+}
+
+.section_text {
+  margin-top: 1em;
+  font-family: map_get($fonts, 'pro');
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  color: $mainTextColor;
+}
+
+.section_card_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  .section_card {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: $cardBackground;
+
+    .section_card_heading {
+      margin-top: 1em;
+      font-family: map_get($fonts, 'pro');
+      font-size: 1.5em;
+      text-align: center;
+      color: #fafafa;
+    }
+
+    .section_card_text {
+      font-family: map_get($fonts, 'fr');
+      font-size: 1em;
+      text-align: center;
+      color: $cardParagraphColor;
+    }
+
+  }
+}

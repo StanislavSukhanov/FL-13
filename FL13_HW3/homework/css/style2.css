@@ -1,0 +1,94 @@
+p {
+  margin: 0; }
+
+body {
+  margin: 0;
+  background-color: #22232e; }
+
+.header {
+  background: url("../img/m-h-night.jpg") no-repeat;
+  background-size: cover;
+  outline: 1px solid green; }
+  .header p {
+    font-family: "Source Sans Pro";
+    color: #fff; }
+  .header .header-wrap {
+    padding: 5em 0 8em;
+    margin-left: 5em;
+    width: 55%; }
+  .header .landing-logo {
+    height: 3em;
+    display: flex;
+    align-items: center; }
+    .header .landing-logo p {
+      text-transform: uppercase;
+      font-family: "Hind";
+      width: 70px;
+      line-height: 1em;
+      font-size: 1.4em;
+      text-align: center;
+      white-space: pre-wrap;
+      color: #fff; }
+    .header .landing-logo img {
+      display: inline-block; }
+    .header .landing-logo span {
+      font-size: 0.6em;
+      text-transform: lowercase;
+      font-family: "Fresca"; }
+    .header .landing-logo span:before {
+      content: ' '; }
+  .header .header_heading {
+    margin-top: 1em;
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 1em; }
+  .header .header_text {
+    white-space: pre-line;
+    margin: 1.7em 0;
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 1.7em; }
+  .header .header_button {
+    border-color: transparent;
+    border-radius: 2px;
+    background-color: #e3ab00;
+    padding: .5em 2em;
+    color: #22232e;
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "Source Sans Pro";
+    margin-right: 10em; }
+  .header .login {
+    color: #fff;
+    font-family: "Hind"; }
+    .header .login:visited {
+      color: #fff; }
+
+.section_text {
+  margin-top: 1em;
+  font-family: "Source Sans Pro";
+  font-size: 2em;
+  font-weight: 600;
+  text-align: center;
+  color: #fff; }
+
+.section_card_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .section_card_wrap .section_card {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    background-color: #3c3f50; }
+    .section_card_wrap .section_card .section_card_heading {
+      margin-top: 1em;
+      font-family: "Source Sans Pro";
+      font-size: 1.5em;
+      text-align: center;
+      color: #fafafa; }
+    .section_card_wrap .section_card .section_card_text {
+      font-family: "Fresca";
+      font-size: 1em;
+      text-align: center;
+      color: #c3c7c9; }
