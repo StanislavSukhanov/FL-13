@@ -1,7 +1,7 @@
 // Your code goes here
 const users = [
     {name: 'Admin', pass: 'RootPass'},
-    {name: 'User', pass: 'UserPass'},
+    {name: 'User', pass: 'UserPass'}
 ]
 
 const userName = prompt('Please, enter your user name:');
