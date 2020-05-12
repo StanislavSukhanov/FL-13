@@ -1,0 +1,23 @@
+/* TODO: your styles goes here*/
+
+ul {
+    list-style-type: none;
+    width: 200px;
+}
+
+ul * {
+    cursor: pointer;
+}
+
+li:nth-child(0) {
+    display: flex;
+    align-items: center;
+}
+
+li i {
+    color: orange;
+}
+
+.hide_children ul {
+    display: none;
+}
