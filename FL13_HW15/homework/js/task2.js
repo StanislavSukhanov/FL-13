@@ -1,38 +1,4 @@
-// // TODO: Your code goes here
-//
-// const getInfo = (state) => {
-//     const result = {}
-//     for (let item in state) {
-//         result[item] = state[item];
-//     }
-//     return result;
-// }
-//
-// const upgradeEngine = (state) => {
-//     return (engine, maxSpeed) => {
-//         if (state.isStopped) {
-//             state.engine = engine;
-//             state.maxSpeed = maxSpeed;
-//             console.log('engine is upgraded to ', {engine: state.engine, maxSpeed: state.maxSpeed})
-//         } else {
-//             console.log('you cant upgrade an engine while machine is running');
-//
-//         }
-//     }
-// }
-//
-// function Vehicle(color = '', engine = '') {
-//     const state = {
-//         color,
-//         engine,
-//         maxSpeed: 70,
-//         isStopped: true
-//     }
-//     return {
-//         getInfo: () => showDetails(state),
-//         upgradeEngine: (engine, maxSpeed) => upgradeEngine(state)
-//     }
-// }
+// TODO: Your code goes here
 
 const Vehicle = function (color, engine) {
     this.color = color;
