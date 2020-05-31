@@ -3,3 +3,4 @@ task/
 .idea/
 examples/
 .eslintrc.js
+server/
